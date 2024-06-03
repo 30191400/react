@@ -1,6 +1,6 @@
 import React from 'react'
 
-function card() {
+function Card() {
   return (
 <div class="relative h-[400px] w-[300px] rounded-md">
   <img
@@ -23,4 +23,4 @@ function card() {
 )
 }
 
-export default card
+export default Card
