@@ -14,7 +14,7 @@ function TodoItem({ todo }) {
         ToggleComplete(todo.id)
     }
     return (
-        <div classname={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black
+        <div className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black
     ${todo.completed ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"}`}>
             <input
                 type="checkbox"
@@ -26,7 +26,7 @@ function TodoItem({ todo }) {
                 type="text"
                 className={`border outline-none w-full bg-transparent rounded-lg ${istodoedit ? "border-black/10 px-2" : "border-transparent"
                     } ${todo.completed ? "line-through" : ""}`}
-                value={todoMsg}
+                value={todomsg}
                 onChange={(e) => settodomsg(e.target.value)}
                 readOnly={!istodoedit}
             />

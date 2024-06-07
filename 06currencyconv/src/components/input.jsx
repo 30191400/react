@@ -8,18 +8,18 @@ function input({
     CurrencyOptions=[],
     selectedCurrency="usd",
     amountDisabled=false,
-    classname="",
+    className="",
 }) {
     const id=useId()
   return (
-    <div className={`text-4xl text-center textcolour=white ${classname}`}>
-        <div classname='w-1-2'>
-        <label html="id" classname='text-black/40 mb-2
+    <div className={`text-4xl text-center textcolour=white ${className}`}>
+        <div className='w-1-2'>
+        <label html="id" className='text-black/40 mb-2
          inline-block'>{label}</label>
          <input 
          id="id"
          type="number"
-         classname='outline-none w-full
+         className='outline-none w-full
           bg-transparent py-1.5'
           placeholder='amount'
           disabled={amountDisabled}
